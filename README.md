@@ -38,8 +38,9 @@ I tend to kickstart then hand off to
 [Puppet](https://puppetlabs.com/puppet/what-is-puppet/) to do configuration
 work - and setting 'cm: 1' in [the YAML
 file](https://github.com/phips/bacio/blob/master/hosts.yaml) would ordinarily
-run Puppet (see [line 310](https://github.com/phips/bacio/blob/master/bacio.pl)
-- it's commented out at the moment).
+run Puppet (see [line
+310](https://github.com/phips/bacio/blob/master/bacio.pl), it's commented out
+at the moment).
 
 The original Catalyst version had a web interface for 'registering' hosts,
 editing and deleting hosts and managing the kickstart servers. Editing YAML is
