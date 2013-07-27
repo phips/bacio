@@ -1,0 +1,18 @@
+---
+08-00-27-0b-cf-95:
+    name:  'centos5.lan'
+    osrel: '5.9'
+    cm:    0
+
+00-1c-42-f0-6f-64:
+    name:  'centos6.lan'
+    osrel: '6.4'
+    cm:    1
+
+6.4:
+    server: '192.168.1.1'
+    url: '/centos/6.4/os/x86_64'
+
+5.9:
+    server: '192.168.1.1'
+    url:    'cdrom'
