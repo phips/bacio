@@ -11,7 +11,7 @@
 
 6.4:
     server: '192.168.1.1'
-    url: '/centos/6.4/os/x86_64'
+    url: '/centos/6.4/os'
 
 5.9:
     server: '192.168.1.1'
