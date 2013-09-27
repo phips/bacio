@@ -10,5 +10,6 @@ requires 'perl'        => '5.010001';
 requires 'Mojolicious' => 4;
 requires 'DDP';
 requires 'YAML::XS';
+requires 'Modern::Perl';
 
 WriteAll;
