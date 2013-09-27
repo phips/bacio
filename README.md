@@ -1,5 +1,7 @@
 ## Bacio - a kickstart helper
 
+[![Build Status](https://travis-ci.org/phips/bacio.png)](https://travis-ci.org/phips/bacio)
+
 ### What is it?
 
 Kickstarting Linux needs a different vmlinuz and initrd per version. This gets
