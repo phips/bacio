@@ -3,6 +3,9 @@ use Test::More;
 use Test::Mojo;
 
 use FindBin qw/$Bin/;
+
+$ENV{'MOJO_LOG_LEVEL'} = 'info';
+
 require "$Bin/../bacio.pl";
 
 my $t = Test::Mojo->new;
