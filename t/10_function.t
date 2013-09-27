@@ -1,12 +1,12 @@
 use Modern::Perl;
-use Test::More;
+use Test::More tests => 7;
 use Test::Mojo;
 
 use FindBin qw/$Bin/;
 
 $ENV{'MOJO_LOG_LEVEL'} = 'info';
 
-require "$Bin/../bacio.pl";
+require_ok ("$Bin/../bacio.pl");
 
 my $t = Test::Mojo->new;
 $t->get_ok('/ks')
@@ -24,4 +24,3 @@ $t->get_ok('/ks')
     ->status_is(200)
     ->content_like(qr/hostname=centos6.lan/, 'Got a host KS config');
 
-done_testing();
