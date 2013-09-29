@@ -198,6 +198,7 @@ openssh-clients
 openssh-server
 # From EPEL (if osrel = 5)
 git
+libselinux-python
 redhat-lsb
 rsync
 ruby-ri
