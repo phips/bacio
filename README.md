@@ -11,7 +11,7 @@ via a CD/image and let the resulting URL work out what version of the OS you're
 trying to install on the host.
 
 There are plenty of 'big' answers to this - [Cobbler](http://www.cobblerd.org)
-and [The Forman](http://theforeman.org) are two that spring to mind - but I
+and [The Foreman](http://theforeman.org) are two that spring to mind - but I
 wanted something much smaller and simpler. You could go much smaller and
 simpler than this here, without a doubt, but originally I used the problem as
 an excuse to learn [Catalyst](http://catalystframework.org), and then to learn
