@@ -119,7 +119,7 @@ get '/pxe/:mac' => sub {
     $self->render(template => 'pxe', format => 'txt');
 };
 
-app->secret('**CHANGEME**');
+app->secrets('**CHANGEME**');
 app->start;
 
 __DATA__
