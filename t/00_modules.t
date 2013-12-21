@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Test::More;
 
-my @modules = qw{ DDP YAML::XS };
+my @modules = qw{ Compress::Raw::Zlib IO::Compress::Gzip Time::HiRes Data::Dumper YAML::XS };
 
 plan tests =>
     1
