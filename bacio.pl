@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 use Mojolicious::Lite;
-use DDP colored => 0;
+use Data::Dumper;
 use YAML::XS qw/LoadFile/;
 
 helper bootserver => sub {
@@ -44,7 +44,7 @@ get '/' => sub {
 get '/dumpdb' => sub {
     my $self = shift;
 
-    $self->render(text => p $self->db);
+    $self->render(text => Dumper $self->db);
 };
 
 get '/ks' => (agent => qr/Safari/) => sub {
