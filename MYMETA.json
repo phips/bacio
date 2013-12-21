@@ -1,10 +1,10 @@
 {
    "abstract" : "A simple Linux Kickstart helper",
    "author" : [
-      "Mark Phillips <mark@probably.co.uk"
+      "Mark Phillips <mark@probably.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.112621",
+   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.132140",
    "license" : [
       "perl_5"
    ],
@@ -32,9 +32,9 @@
       },
       "runtime" : {
          "requires" : {
-            "DDP" : 0,
+            "DDP" : "0",
             "Mojolicious" : "4",
-            "YAML::XS" : 0
+            "YAML::XS" : "0"
          }
       }
    },
