@@ -11,7 +11,8 @@ requires 'Compress::Raw::Zlib';
 requires 'IO::Compress::Gzip';
 requires 'Time::HiRes';
 requires 'Data::Dumper';
-requires 'Mojolicious'          => 4;
+requires 'Mojolicious'          => '4.63';
 requires 'YAML::XS';
+requires 'TAP::Formatter::JUnit';
 
 WriteAll;

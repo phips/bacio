@@ -4,7 +4,7 @@
       "Mark Phillips <mark@probably.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Install version 1.06, CPAN::Meta::Converter version 2.132140",
+   "generated_by" : "ExtUtils::MakeMaker version 6.8, CPAN::Meta::Converter version 2.120351",
    "license" : [
       "perl_5"
    ],
@@ -15,8 +15,8 @@
    "name" : "Bacio",
    "no_index" : {
       "directory" : [
-         "inc",
-         "t"
+         "t",
+         "inc"
       ]
    },
    "prereqs" : {
@@ -27,22 +27,21 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.36"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "runtime" : {
          "requires" : {
+            "Compress::Raw::Zlib" : "0",
             "Data::Dumper" : "0",
+            "IO::Compress::Gzip" : "0",
             "Mojolicious" : "4",
+            "TAP::Formatter::JUnit" : "0",
+            "Time::HiRes" : "0",
             "YAML::XS" : "0"
          }
       }
    },
    "release_status" : "stable",
-   "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
-   },
-   "version" : "0.5"
+   "version" : "0.6"
 }
