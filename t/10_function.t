@@ -23,5 +23,5 @@ $t->ua->on(start => sub {
 
 $t->get_ok('/ks')
     ->status_is(200)
-    ->content_like(qr/hostname=centos6.lan/, 'Got a host KS config');
+    ->content_like(qr/hostname=c64.lan/, 'Got a host KS config');
 

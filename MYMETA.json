@@ -4,7 +4,7 @@
       "Mark Phillips <mark@probably.co.uk>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.8, CPAN::Meta::Converter version 2.120351",
+   "generated_by" : "ExtUtils::MakeMaker version 6.86, CPAN::Meta::Converter version 2.120630",
    "license" : [
       "perl_5"
    ],
@@ -35,7 +35,7 @@
             "Compress::Raw::Zlib" : "0",
             "Data::Dumper" : "0",
             "IO::Compress::Gzip" : "0",
-            "Mojolicious" : "4",
+            "Mojolicious" : "4.63",
             "TAP::Formatter::JUnit" : "0",
             "Time::HiRes" : "0",
             "YAML::XS" : "0"
