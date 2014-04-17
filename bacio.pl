@@ -38,7 +38,7 @@ helper mac => sub {
 get '/' => sub {
     my $self = shift;
     $self->res->headers->header('X-Hello' => 'Bacio on Mojo');
-    $self->render(text => 'Default');
+    $self->render(text => 'Mojo Bacio');
 };
 
 get '/dumpdb' => sub {
@@ -135,6 +135,7 @@ get '/kspost/:mac' => sub {
 };
 
 app->secrets('**CHANGEME**');
+app->config(hypnotoad => {listen => ['http://127.0.0.1:8080']});
 app->start;
 
 __DATA__
@@ -172,14 +173,13 @@ firstboot --disabled
 reboot
 zerombr
 clearpart --all --initlabel
-part swap --size=1024 --asprimary
+part swap --size=128 --asprimary
 part /boot --fstype <%= $kickstart->{fstype} %> --size=200
 % if ( $lvm ) {
 part pv.01 --size=1 --grow
 volgroup vg0 pv.01
-logvol /    --vgname=vg0 --fstype=ext4 --size=8192 --name=lvroot
-logvol /var --vgname=vg0 --fstype=ext4 --size=1024 --name=lvvar
-logvol /srv --vgname=vg0 --fstype=ext4 --size=1 --grow --name=lvsrv
+logvol /    --vgname=vg0 --fstype=<%= $kickstart->{fstype} %> --size=1 --grow --name=lvroot
+logvol /var --vgname=vg0 --fstype=<%= $kickstart->{fstype} %> --size=1024 --name=lvvar
 % } else {
 part / --fstype <%= $kickstart->{fstype} %> --size=1 --grow
 part /var --fstype <%= $kickstart->{fstype} %> --size=1024
@@ -499,5 +499,4 @@ Kickstart post install tasks. --default will run yum update.
 =cut
 
 __SSHKEY__
-ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA6NF8iallvQVp22WDkTkyrtvp9eWW6A8YVr+kz4TjGYe7gHzIw+niNltGEFHzD8+v1I2YJ6oXevct1YeS0o9HZyN1Q9qgCgzUFtdOKLv6IedplqoPkcmF0aYet2PkEDo3MlTBckFXPITAMzF8dJSIFo9D8HfdOV0IAdx4O7PtixWKn5y2hMNG0zQPyUecp4pzC6kivAIhyfHilFR61RGL+GPXQ2MWZWFYbAGjyiYJnAmCP3NOTd0jMZEnDkbUvxhMmBYSdETk1rRgm+R4LOzFUGaHqHDLKLX+FIPKcF96hrucXzcWyLbIbEgE98OHlnVYCzRdK8jlqm8tehUc9c9WhQ== vagrant insecure public key
-
+ssh-rsa PUT_PROPER_KEY_IN_HERE <comment>
