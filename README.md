@@ -41,7 +41,7 @@ I tend to kickstart then hand off to
 work - and setting 'cm: 1' in [the YAML
 file](https://github.com/phips/bacio/blob/master/hosts.yaml) would ordinarily
 run Puppet (see [line
-310](https://github.com/phips/bacio/blob/master/bacio.pl), it's commented out
+341](https://github.com/phips/bacio/blob/master/bacio.pl#L341), it's commented out
 at the moment).
 
 The original Catalyst version had a web interface for 'registering' hosts,
