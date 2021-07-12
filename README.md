@@ -10,7 +10,7 @@ nicer would be to boot a generic PXE image, whether that be over the network or
 via a CD/image and let the resulting URL work out what version of the OS you're
 trying to install on the host.
 
-There are plenty of 'big' answers to this - [Cobbler](http://www.cobblerd.org)
+There are plenty of 'big' answers to this - [Cobbler](https://cobbler.github.io/)
 and [The Foreman](http://theforeman.org) are two that spring to mind - but I
 wanted something much smaller and simpler. You could go much smaller and
 simpler than this here, without a doubt, but originally I used the problem as
