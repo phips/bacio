@@ -47,10 +47,13 @@ simpler ;-)
 
 Tinker to your delight.
 
-## Debugging
+## Debugging
 
 You can dump the 'database' as the app sees it by viewing /dumpdb. Easiest to
 curl the url, as it renders as text. You can also test kickstart files with
 `curl -H'X-RHN-Provisioning-Mac-0: eth0 MACADDRESS'`.
 
+## Installation
+
+This is Perl. I highly recommend using [local::lib](https://metacpan.org/pod/local::lib), then simply run `cpanm --installdeps .` in the directory after cloning.
 
