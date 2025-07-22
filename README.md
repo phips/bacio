@@ -13,7 +13,7 @@ and [The Foreman](https://theforeman.org) are two that spring to mind - but I
 wanted something much smaller and simpler. You could go much smaller and
 simpler than this here, without a doubt, but originally I used the problem as
 an excuse to learn [Catalyst](http://catalyst.perl.org), and then to learn
-[Mojolicious](https://mojolicio.us).
+[Mojolicious](https://mojolicious.org)
 
 ## What is it really?
 
@@ -22,10 +22,10 @@ together rather quickly to replace a version I originally wrote in
 Catalyst.
 
 It's now written as a Mojolicious
-[lite](https://mojolicio.us/perldoc/Mojolicious/Lite) app. You can run it with
+[lite](https://docs.mojolicious.org/Mojolicious/Lite) app. You can run it with
 'morbo' for testing, under [Plack](https://plackperl.org), Hypnotoad, whatever.
 Check the Mojo docs on
-[deployment](https://mojolicio.us/perldoc/Mojolicious/Guides/Cookbook#DEPLOYMENT).
+[deployment](https://docs.mojolicious.org/Mojolicious/Guides/Cookbook#DEPLOYMENT).
 
 In short, you want a 'hosts.yaml' file in the same directory as the script. It
 needs to contain a couple of hashes containing Linux versions with the server
